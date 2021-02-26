@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TN_Hiking.View.ParcoursTarcerView">
+   <children>
+      <Button layoutX="47.0" layoutY="336.0" mnemonicParsing="false" onAction="#changeSceneCreerParcours" prefHeight="27.0" prefWidth="123.0" text="Créer une étape" />
+      <Button layoutX="240.0" layoutY="336.0" mnemonicParsing="false" onAction="#finirParcours" prefHeight="27.0" prefWidth="123.0" text="Finir le parcours" />
+      <Button fx:id="annuler" layoutX="438.0" layoutY="336.0" mnemonicParsing="false" onAction="#changeSceneTracerToWelcomeView" text="Annuler le parcours" />
+      <ImageView fitHeight="119.0" fitWidth="279.0" layoutX="160.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Ressources/Logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="247.0" layoutY="223.0" prefHeight="27.0" prefWidth="112.0" text="Parcours en cours..." />
+       <MenuBar fx:id="my_bar" prefHeight="25.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+           <menus>
+               <Menu mnemonicParsing="false" text="Home">
+                   <items>
+                       <MenuItem mnemonicParsing="false" onAction="#closeApp" text="Close" />
+                       <MenuItem fx:id="homeButton" disable="true" mnemonicParsing="false" text="Home" />
+                   </items>
+               </Menu>
+            <Menu disable="true" mnemonicParsing="false" text="File" />
+               <Menu mnemonicParsing="false" text="Outils">
+                   <items>
+                       <MenuItem fx:id="borderPane" disable="true" mnemonicParsing="false" onAction="#changeSceneCreerParcours" text="Créer un parcours" />
+                   </items>
+               </Menu>
+               <Menu mnemonicParsing="false" text="Randonnées">
+                   <items>
+                       <MenuItem disable="true" mnemonicParsing="false" text="Trouver un parcours" />
+                   </items>
+               </Menu>
+               <Menu mnemonicParsing="false" text="Gestion">
+                   <items>
+                       <MenuItem disable="true" mnemonicParsing="false" text="Afficher les parcours" />
+                   </items>
+               </Menu>
+           </menus>
+       </MenuBar>
+      <ProgressBar layoutX="200.0" layoutY="250.0" prefWidth="200.0" />
+   </children>
+</Pane>

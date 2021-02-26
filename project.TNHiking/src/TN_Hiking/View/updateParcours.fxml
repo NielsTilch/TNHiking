@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TN_Hiking.View.UpdateParcours">
+   <children>
+      <Pane layoutY="31.0" prefHeight="310.0" prefWidth="600.0">
+         <children>
+            <Button layoutX="16.0" layoutY="276.0" mnemonicParsing="false" onAction="#eventHandlerModificationEtape" text="Modifier les étapes" />
+            <Button layoutX="344.0" layoutY="276.0" mnemonicParsing="false" onAction="#eventHandlerEnregistrerParcours" text="Enregistrer" />
+            <Label layoutX="1.0" layoutY="5.0" prefHeight="18.0" prefWidth="120.0" text="Titre du parcours :" />
+            <Label layoutX="2.0" layoutY="40.0" prefHeight="18.0" prefWidth="105.0" text="Note du parcours :" />
+            <Label layoutX="2.0" layoutY="74.0" prefHeight="26.0" prefWidth="132.0" text="Nom du lieu de début  :" />
+            <Label layoutX="2.0" layoutY="115.0" prefHeight="18.0" prefWidth="105.0" text="Nom du lieu de fin :" />
+            <Label layoutX="2.0" layoutY="159.0" prefHeight="18.0" prefWidth="120.0" text="Descriptipn courte :" />
+            <Label layoutX="2.0" layoutY="211.0" prefHeight="18.0" prefWidth="120.0" text="Description détaillée :" />
+            <TextArea fx:id="description" layoutX="146.0" layoutY="204.0" prefHeight="50.0" prefWidth="420.0" />
+            <TextArea fx:id="resume" layoutX="146.0" layoutY="143.0" prefHeight="50.0" prefWidth="420.0" />
+            <TextField fx:id="titre" layoutX="145.0" layoutY="-1.0" prefHeight="27.0" prefWidth="219.0" />
+            <TextField fx:id="note" layoutX="145.0" layoutY="35.0" prefHeight="27.0" prefWidth="219.0" />
+            <TextField fx:id="debut" layoutX="145.0" layoutY="73.0" prefHeight="27.0" prefWidth="219.0" />
+            <TextField fx:id="fin" layoutX="145.0" layoutY="110.0" prefHeight="27.0" prefWidth="219.0" />
+            <Button fx:id="home" layoutX="498.0" layoutY="276.0" mnemonicParsing="false" onAction="#eventHadlerBackBouton" text="Home" />
+         </children>
+      </Pane>
+       <MenuBar fx:id="my_bar" prefHeight="25.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+           <menus>
+               <Menu mnemonicParsing="false" text="Home">
+                   <items>
+                       <MenuItem mnemonicParsing="false" onAction="#closeButton" text="Close" />
+                       <MenuItem fx:id="homeButton" mnemonicParsing="false" onAction="#eventHadlerBackBouton" text="Home" />
+                   </items>
+               </Menu>
+               <Menu mnemonicParsing="false" text="Outils">
+                   <items>
+                       <MenuItem fx:id="borderPane" mnemonicParsing="false" onAction="#changeSceneCreerParcours" text="Créer un parcours" />
+                   </items>
+               </Menu>
+               <Menu mnemonicParsing="false" text="Randonnées">
+                   <items>
+                       <MenuItem mnemonicParsing="false" onAction="#trouverParcoursMenu" text="Trouver un parcours" />
+                   </items>
+               </Menu>
+               <Menu mnemonicParsing="false" text="Gestion">
+                   <items>
+                       <MenuItem mnemonicParsing="false" onAction="#eventHandlersfav" text="Afficher tous les parcours" />
+                   </items>
+               </Menu>
+           </menus>
+       </MenuBar>
+   </children>
+</AnchorPane>
