@@ -1,5 +1,5 @@
 # TelecomNancy Hiking
-![alt text](https://gitlab.telecomnancy.univ-lorraine.fr/codingweek2k20/project-grp12/-/raw/developpement/BDD/Logo.png)
+![alt text](https://github.com/NielsTilch/TNHiking/blob/main/project.TNHiking/BDD/Logo.png)
 
 ## Introduction
 L’objectif de ce projet est de réaliser une application permettant de gérer des parcours de promenades ou de randonnées.
