@@ -86,7 +86,7 @@ Ce dernier menu permet à un utilisateur d'*Afficher tous les parcours*. De la m
 
 __A lire :__ Nous voulions reproduire le comportement d'une application connectée à une base de donnée, nous avons décidé de  "simuler" l'existence d'une base de donnée à l'aide d'un répertoire nommé "BDD". On part du postulat que l'utilisateur est connecté à cette base de donnée et qu'il peut push ou pull des données dessus. Par exemple, à l'ouverture de l'application, il charge automatiquement les données de cette BD.
 
-![alt text](https://gitlab.telecomnancy.univ-lorraine.fr/codingweek2k20/project-grp12/-/raw/master/src/TN_Hiking/Ressources/file.PNG)
+![alt text](https://github.com/NielsTilch/TNHiking/blob/main/project.TNHiking/src/TN_Hiking/Ressources/file.PNG)
 
 On a dans la toolBar menu la possiblité d'avoir accès à un onglet "File"
 On a accès à différents boutons:
